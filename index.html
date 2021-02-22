@@ -20,16 +20,29 @@
         >
             <a-assets>
                 <a-asset-item
-                    id="animated-asset"
-                    src="assets/asset.gltf"
+                    id="H2O" src="https://raw.githubusercontent.com/ktsimouris/all-chemical-markers/gh-pages/assets/asset.gltf"
+                ></a-asset-item>
+       <a-asset-item
+                    id="CO2" src="https://raw.githubusercontent.com/ktsimouris/AR-CarbonDioxide-final/gh-pages/assets/asset.gltf"
+                ></a-asset-item>   
+              <a-asset-item
+                    id="NH3" src="https://raw.githubusercontent.com/ktsimouris/AR-ammonia/gh-pages/assets/asset.gltf"
+                ></a-asset-item>
+              <a-asset-item
+                    id="CH4" src="https://raw.githubusercontent.com/ktsimouris/AR-methane/gh-pages/assets/asset.gltf"
+                ></a-asset-item>
+              <a-asset-item
+                    id="HCl" src="https://raw.githubusercontent.com/ktsimouris/AR-HCl-final/gh-pages/assets/asset.gltf"
+                ></a-asset-item>
+              <a-asset-item
+                    id="Eth" src="https://raw.githubusercontent.com/ktsimouris/AR-ethanol/gh-pages/assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
 
             <a-marker
-                id="animated-marker"
+                id="H2O"
                 type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/all-chemical-markers/gh-pages/assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -37,41 +50,109 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.4800865224139422 0.4800865224139422 0.4800865224139422"
+                    scale="0.40 0.40 0.40"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    gltf-model="#H2O"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
             </a-marker>
-                <a-assets>
-                <a-asset-item
-                    id="animated-asset"
-                    src="https://raw.githubusercontent.com/ktsimouris/AR-CarbonDioxide-final/gh-pages/assets/asset.gltf"
-                ></a-asset-item>
-            </a-assets>
 
             <a-marker
-                id="animated-marker"
+                id="CO2"
                 type="pattern"
-                preset="custom"
-                url="https://raw.githubusercontent.com/ktsimouris/AR-CarbonDioxide-final/gh-pages/assets/marker.patt"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/AR-CarbonDioxide-final/gh-pages/assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerΒ"
+                id="markerΑ"
             >
                 <a-entity
                     id="bowser-model"
                     scale="0.25 0.25 0.25"
                     rotation="0 90 0"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    gltf-model="#CO2"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
             </a-marker>
-
+          
+            <a-marker
+                id="NH3"
+                type="pattern"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/AR-ammonia/gh-pages/assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.29 0.29 0.29"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#NH3"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+          
+                      <a-marker
+                id="CH4"
+                type="pattern"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/AR-methane/gh-pages/assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.28 0.28 0.28"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#CH4"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+          
+                      <a-marker
+                id="HCl"
+                type="pattern"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/AR-HCl-final/gh-pages/assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.32 0.32 0.32"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#HCl"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+          
+                      <a-marker
+                id="Eth"
+                type="pattern"
+                preset="custom" url="https://raw.githubusercontent.com/ktsimouris/AR-ethanol/gh-pages/assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.21 0.21 0.21"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#Eth"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
